@@ -1,0 +1,6 @@
+framework module Pods_NanAnime_NanAnimeUITests {
+  umbrella header "Pods-NanAnime-NanAnimeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

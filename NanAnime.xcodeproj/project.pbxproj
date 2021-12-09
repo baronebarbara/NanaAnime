@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570088A62BA1BDFDB2023AAF /* Pods_NanAnime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D59BD3D66A09382D1CCC3F0 /* Pods_NanAnime.framework */; };
+		775F4E68176138851F625156 /* Pods_NanAnimeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D6C35F7E582CA325D0074B /* Pods_NanAnimeTests.framework */; };
+		B131D150276244640096BF92 /* Core.framework in Framework */ = {isa = PBXBuildFile; fileRef = B131D14C276244170096BF92 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B1436A3C27623DFB008C3850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1436A3B27623DFB008C3850 /* AppDelegate.swift */; };
 		B1436A3E27623DFB008C3850 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1436A3D27623DFB008C3850 /* SceneDelegate.swift */; };
 		B1436A4027623DFB008C3850 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1436A3F27623DFB008C3850 /* ContentView.swift */; };
@@ -15,9 +18,24 @@
 		B1436A4827623DFD008C3850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1436A4627623DFD008C3850 /* LaunchScreen.storyboard */; };
 		B1436A5327623DFE008C3850 /* NanAnimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1436A5227623DFE008C3850 /* NanAnimeTests.swift */; };
 		B1436A5E27623DFE008C3850 /* NanAnimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1436A5D27623DFE008C3850 /* NanAnimeUITests.swift */; };
+		D61FE7B57745F64A137FCF78 /* Pods_NanAnime_NanAnimeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D78D1ECE12366290429B7F /* Pods_NanAnime_NanAnimeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B131D14B276244170096BF92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B131D146276244170096BF92 /* Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B1436A75276240E8008C3850;
+			remoteInfo = Core;
+		};
+		B131D14D276244170096BF92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B131D146276244170096BF92 /* Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B1436A7E276240E9008C3850;
+			remoteInfo = CoreTests;
+		};
 		B1436A4F27623DFE008C3850 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B1436A3027623DFB008C3850 /* Project object */;
@@ -34,7 +52,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B131D14F276244330096BF92 /* Framework */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B131D150276244640096BF92 /* Core.framework in Framework */,
+			);
+			name = Framework;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1D59BD3D66A09382D1CCC3F0 /* Pods_NanAnime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanAnime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		817934088ACCFC186B49792B /* Pods-NanAnime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanAnime.release.xcconfig"; path = "Target Support Files/Pods-NanAnime/Pods-NanAnime.release.xcconfig"; sourceTree = "<group>"; };
+		9521BF72ED7F0F52C9448B01 /* Pods-NanAnime-NanAnimeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanAnime-NanAnimeUITests.release.xcconfig"; path = "Target Support Files/Pods-NanAnime-NanAnimeUITests/Pods-NanAnime-NanAnimeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A53666F9930AB89922F8146B /* Pods-NanAnime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanAnime.debug.xcconfig"; path = "Target Support Files/Pods-NanAnime/Pods-NanAnime.debug.xcconfig"; sourceTree = "<group>"; };
+		B131D146276244170096BF92 /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = "<group>"; };
 		B1436A3827623DFB008C3850 /* NanAnime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanAnime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1436A3B27623DFB008C3850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1436A3D27623DFB008C3850 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +86,11 @@
 		B1436A5927623DFE008C3850 /* NanAnimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanAnimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1436A5D27623DFE008C3850 /* NanAnimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanAnimeUITests.swift; sourceTree = "<group>"; };
 		B1436A5F27623DFE008C3850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0FB1EE46B3895C49769FFC /* Pods-NanAnimeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanAnimeTests.release.xcconfig"; path = "Target Support Files/Pods-NanAnimeTests/Pods-NanAnimeTests.release.xcconfig"; sourceTree = "<group>"; };
+		F3D6C35F7E582CA325D0074B /* Pods_NanAnimeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanAnimeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D78D1ECE12366290429B7F /* Pods_NanAnime_NanAnimeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanAnime_NanAnimeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC12EC98F9CE8E5239667827 /* Pods-NanAnimeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanAnimeTests.debug.xcconfig"; path = "Target Support Files/Pods-NanAnimeTests/Pods-NanAnimeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE722122F83341CA6A6EED70 /* Pods-NanAnime-NanAnimeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanAnime-NanAnimeUITests.debug.xcconfig"; path = "Target Support Files/Pods-NanAnime-NanAnimeUITests/Pods-NanAnime-NanAnimeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				570088A62BA1BDFDB2023AAF /* Pods_NanAnime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775F4E68176138851F625156 /* Pods_NanAnimeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +114,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61FE7B57745F64A137FCF78 /* Pods_NanAnime_NanAnimeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		269EBAB77510DB5E645B55CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A53666F9930AB89922F8146B /* Pods-NanAnime.debug.xcconfig */,
+				817934088ACCFC186B49792B /* Pods-NanAnime.release.xcconfig */,
+				FE722122F83341CA6A6EED70 /* Pods-NanAnime-NanAnimeUITests.debug.xcconfig */,
+				9521BF72ED7F0F52C9448B01 /* Pods-NanAnime-NanAnimeUITests.release.xcconfig */,
+				FC12EC98F9CE8E5239667827 /* Pods-NanAnimeTests.debug.xcconfig */,
+				BF0FB1EE46B3895C49769FFC /* Pods-NanAnimeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B131D145276243FE0096BF92 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				B131D146276244170096BF92 /* Core.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		B131D147276244170096BF92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B131D14C276244170096BF92 /* Core.framework */,
+				B131D14E276244170096BF92 /* CoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B1436A2F27623DFB008C3850 = {
 			isa = PBXGroup;
 			children = (
+				B131D145276243FE0096BF92 /* Dependencies */,
 				B1436A3A27623DFB008C3850 /* NanAnime */,
 				B1436A5127623DFE008C3850 /* NanAnimeTests */,
 				B1436A5C27623DFE008C3850 /* NanAnimeUITests */,
 				B1436A3927623DFB008C3850 /* Products */,
+				269EBAB77510DB5E645B55CD /* Pods */,
+				F5DC8385E639A7D70E52E2F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +214,16 @@
 			path = NanAnimeUITests;
 			sourceTree = "<group>";
 		};
+		F5DC8385E639A7D70E52E2F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D59BD3D66A09382D1CCC3F0 /* Pods_NanAnime.framework */,
+				F6D78D1ECE12366290429B7F /* Pods_NanAnime_NanAnimeUITests.framework */,
+				F3D6C35F7E582CA325D0074B /* Pods_NanAnimeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1436A6227623DFE008C3850 /* Build configuration list for PBXNativeTarget "NanAnime" */;
 			buildPhases = (
+				D1E3016610A30B9B03AEEBA0 /* [CP] Check Pods Manifest.lock */,
 				B1436A3427623DFB008C3850 /* Sources */,
 				B1436A3527623DFB008C3850 /* Frameworks */,
 				B1436A3627623DFB008C3850 /* Resources */,
+				B131D14F276244330096BF92 /* Framework */,
 			);
 			buildRules = (
 			);
@@ -160,6 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1436A6527623DFE008C3850 /* Build configuration list for PBXNativeTarget "NanAnimeTests" */;
 			buildPhases = (
+				F0B69B9E90D851A630BC11B0 /* [CP] Check Pods Manifest.lock */,
 				B1436A4A27623DFE008C3850 /* Sources */,
 				B1436A4B27623DFE008C3850 /* Frameworks */,
 				B1436A4C27623DFE008C3850 /* Resources */,
@@ -178,6 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1436A6827623DFE008C3850 /* Build configuration list for PBXNativeTarget "NanAnimeUITests" */;
 			buildPhases = (
+				5E2D07046B546A688A8E0D2E /* [CP] Check Pods Manifest.lock */,
 				B1436A5527623DFE008C3850 /* Sources */,
 				B1436A5627623DFE008C3850 /* Frameworks */,
 				B1436A5727623DFE008C3850 /* Resources */,
@@ -225,6 +317,12 @@
 			mainGroup = B1436A2F27623DFB008C3850;
 			productRefGroup = B1436A3927623DFB008C3850 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B131D147276244170096BF92 /* Products */;
+					ProjectRef = B131D146276244170096BF92 /* Core.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B1436A3727623DFB008C3850 /* NanAnime */,
@@ -233,6 +331,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B131D14C276244170096BF92 /* Core.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Core.framework;
+			remoteRef = B131D14B276244170096BF92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B131D14E276244170096BF92 /* CoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CoreTests.xctest;
+			remoteRef = B131D14D276244170096BF92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B1436A3627623DFB008C3850 /* Resources */ = {
@@ -260,6 +375,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E2D07046B546A688A8E0D2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NanAnime-NanAnimeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1E3016610A30B9B03AEEBA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NanAnime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B69B9E90D851A630BC11B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NanAnimeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B1436A3427623DFB008C3850 /* Sources */ = {
@@ -433,6 +617,7 @@
 		};
 		B1436A6327623DFE008C3850 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A53666F9930AB89922F8146B /* Pods-NanAnime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,6 +639,7 @@
 		};
 		B1436A6427623DFE008C3850 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817934088ACCFC186B49792B /* Pods-NanAnime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +661,7 @@
 		};
 		B1436A6627623DFE008C3850 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC12EC98F9CE8E5239667827 /* Pods-NanAnimeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +684,7 @@
 		};
 		B1436A6727623DFE008C3850 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0FB1EE46B3895C49769FFC /* Pods-NanAnimeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +707,7 @@
 		};
 		B1436A6927623DFE008C3850 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE722122F83341CA6A6EED70 /* Pods-NanAnime-NanAnimeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +728,7 @@
 		};
 		B1436A6A27623DFE008C3850 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9521BF72ED7F0F52C9448B01 /* Pods-NanAnime-NanAnimeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
